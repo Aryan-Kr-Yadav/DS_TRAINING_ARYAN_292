@@ -11,7 +11,3 @@ int main()
 
 
 }
-union of two Sets 
-intersection
-set differenece
-reverse of an array
