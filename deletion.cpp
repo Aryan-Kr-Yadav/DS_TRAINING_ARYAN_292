@@ -16,6 +16,7 @@ int main()
     cin>>x;
     int pos=-1;
     for(int i=0;i<n;i++)
+    
     {
         if(a[i]==x)
         {
