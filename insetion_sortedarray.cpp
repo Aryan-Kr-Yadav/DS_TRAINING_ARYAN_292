@@ -25,6 +25,7 @@ int main()
             break;
         }
     }
+    cout<<"The array after insertion "<<endl;
     for(i=0;i<=n;i++){
         cout<<a[i]<<endl;
     }
