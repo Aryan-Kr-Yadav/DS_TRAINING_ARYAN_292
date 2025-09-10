@@ -16,29 +16,11 @@ int main(){
     for(int i=0;i<n2;i++){
         cin>>v2[i];
     }
-    vector<int> merged;
-    int i=0,j=0;
-    while(i<n1 && j<n2){
-        if(v1[i]<v2[j]){
-            merged.push_back(v1[i]);
-            i++;
-        }
-        else{
-            merged.push_back(v2[j]);
-            j++;
-        }
-    }
-    while(i<n1){
-        merged.push_back(v1[i]);
-        i++;
-    }
-    while(j<n2){
-        merged.push_back(v2[j]);
-        j++;
-    }
+    vector<int> merged(n1+n2);
+    merge(v1.begin(),v1.end(),v2.begin(),v2.end(),merged.begin());
     cout<<"Merged sorted vector is: "<<endl;
-    for(int k=0;k<merged.size();k++){
+    for(int k=0;k<n1+n2;k++){
         cout<<merged[k]<<" ";
-    }
+    }   
     return 0;
 }
